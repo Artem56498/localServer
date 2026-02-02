@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="uk" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    
+    <!-- GOOGLE SEARCH OPTIMIZATION -->
+    <title>Овруцький ЗДО №8 "Ластівка" | Дитячий садок в Овручі</title>
+    <meta name="description" content="Офіційний сайт дитячого садка 'Ластівка' в Овручі. Якісна дошкільна освіта для дітей 1-6 років. Інклюзивне навчання, досвідчені педагоги.">
+    <meta name="keywords" content="дитячий садок Овруч, ЗДО Ластівка, садочок Житомирська область, дошкільна освіта, дитячий розвиток">
+    
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="L3aMoZRFZU0pbWwUjJfPDd5h7hcqdM3p3z4dfj7Qqo4" />
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <!-- Structured Data для Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Preschool",
+        "name": "Овруцький ЗДО №8 'Ластівка'",
+        "description": "Дитячий садок для дошкільної освіти дітей віком від 1 до 6 років",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "вул. Прикордонна",
+            "addressLocality": "Овруч",
+            "addressRegion": "Житомирська область",
+            "addressCountry": "UA"
+        },
+        "openingHours": "Mo-Fr 07:30-18:30",
+        "url": "https://lastivkadev.github.io/Lastivka_zdo_/"
+    }
+    </script>
+    
+    <style>
+    :root {
+        --primary: #4a6fa5;
+        --primary-dark: #385d8a;
+        --accent: #6dbfb8;
+        --light: #ffffff;
+        --light-gray: #f5f7fa;
+        --dark: #343a40;
+        --shadow: 0 5px 15px rgba(0,0,0,0.1);
+        --radius: 12px;
+        --bg-color: #ffffff;
+        --text-color: #343a40;
+        --card-bg: #ffffff;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: var(--bg-color);
+        color: var(--text-color);
+        line-height: 1.6;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    /* HEADER */
+    header {
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: white;
+        padding: 25px 20px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    
+    header h1 {
+        font-size: clamp(1.8rem, 4vw, 2.5rem);
+        margin-bottom: 10px;
+        font-weight: 700;
+    }
+    
+    header p {
+        font-size: 1.1rem;
+        opacity: 0.9;
+    }
+    
+    .header-buttons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .header-btn {
+        background: rgba(255, 255, 255, 0.25);
+        border: 2px solid rgba(255,255,255,0.4);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        min-width: 160px;
+        justify-content: center;
+    }
+    
+    .header-btn:hover {
+        background: rgba(255,255,255,0.35);
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+    
+    /* ВЕЛИКІ ГОРИЗОНТАЛЬНІ ВКЛАДКИ */
+    .tabs-container {
+        background: var(--light-gray);
+        padding: 0;
+        margin: 0;
+        position: sticky;
+        top: 130px;
+        z-index: 99;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .tabs-wrapper {
+        display: flex;
+        width: max-content;
+        min-width: 100%;
+        padding: 15px 20px;
+        gap: 5px;
+    }
+    
+    .tab-btn {
+        background: var(--card-bg);
+        border: none;
+        padding: 18px 25px;
+        border-radius: 10px 10px 0 0;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 1rem;
+        white-space: nowrap;
+        min-width: 140px;
+        justify-content: center;
+        box-shadow: 0 -2px 5px rgba(0,0,0,0.05);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .tab-btn::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: transparent;
+        transition: all 0.3s;
+    }
+    
+    .tab-btn:hover {
+        background: var(--light);
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .tab-btn:hover::before {
+        background: var(--accent);
+    }
+    
+    .tab-btn.active {
+        background: var(--light);
+        color: var(--primary);
+        box-shadow: 0 -5px 10px rgba(0,0,0,0.08);
+        transform: translateY(-8px);
+    }
+    
+    .tab-btn.active::before {
+        background: var(--primary);
+    }
+    
+    .tab-btn span:first-child {
+        font-size: 1.3rem;
+    }
+    
+    .tab-btn span:last-child {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    
+    /* Стиль для скролу */
+    .tabs-container::-webkit-scrollbar {
+        height: 8px;
+    }
+    
+    .tabs-container::-webkit-scrollbar-track {
+        background: var(--light-gray);
+        border-radius: 4px;
+    }
+    
+    .tabs-container::-webkit-scrollbar-thumb {
+        background: var(--primary);
+        border-radius: 4px;
+    }
+    
+    .tabs-container::-webkit-scrollbar-thumb:hover {
+        background: var(--primary-dark);
+    }
+    
+    /* КАРТКИ */
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 30px 20px;
+        flex: 1;
+    }
+    
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .card {
+        background: var(--card-bg);
+        padding: 35px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        display: none;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid rgba(0,0,0,0.05);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 5px;
+        height: 100%;
+        background: linear-gradient(to bottom, var(--primary), var(--accent));
+    }
+
+    .card.active {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+        animation: cardAppear 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    @keyframes cardAppear {
+        from {
+            opacity: 0;
+            transform: translateY(30px) scale(0.98);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+
+    .card h2 {
+        color: var(--primary);
+        margin-bottom: 25px;
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-weight: 700;
+    }
+    
+    .card h2 span:first-child {
+        font-size: 2rem;
+    }
+
+    .card p {
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+        line-height: 1.7;
+    }
+
+    .info-box {
+        background: linear-gradient(135deg, var(--light-gray), var(--light));
+        padding: 25px;
+        border-radius: 10px;
+        margin-top: 25px;
+        border: 1px solid rgba(0,0,0,0.05);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+    }
+    
+    .info-box p {
+        margin-bottom: 12px;
+        font-size: 1.05rem;
+    }
+    
+    .info-box strong {
+        color: var(--primary);
+    }
+
+    .drive-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: white;
+        padding: 15px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        margin-top: 20px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: none;
+        font-size: 1.05rem;
+        box-shadow: 0 4px 15px rgba(74, 111, 165, 0.2);
+    }
+
+    .drive-link:hover {
+        transform: translateY(-3px) scale(1.02);
+        box-shadow: 0 8px 25px rgba(74, 111, 165, 0.3);
+    }
+
+    .groups-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+        margin-top: 25px;
+    }
+
+    .group-link {
+        background: var(--card-bg);
+        border: 2px solid var(--light-gray);
+        padding: 20px 15px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: var(--primary);
+        font-weight: 600;
+        text-align: center;
+        transition: all 0.3s ease;
+        font-size: 1.05rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .group-link span:first-child {
+        font-size: 1.8rem;
+    }
+
+    .group-link:hover {
+        background: var(--light-gray);
+        transform: translateY(-3px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        border-color: var(--primary);
+    }
+    
+    /* ФОРМА ПАРОЛЯ */
+    .password-form {
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        padding: 25px;
+        border-radius: 12px;
+        margin-top: 30px;
+        border-left: 5px solid var(--primary);
+        animation: slideIn 0.5s ease;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    }
+    
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    .password-form h3 {
+        color: var(--primary);
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 1.3rem;
+    }
+    
+    .password-form p {
+        margin-bottom: 20px;
+        font-size: 1.05rem;
+        color: var(--dark);
+    }
+    
+    .password-input {
+        width: 100%;
+        padding: 16px 20px;
+        margin: 15px 0;
+        border: 2px solid var(--light-gray);
+        border-radius: 10px;
+        font-size: 1.1rem;
+        background: white;
+        transition: all 0.3s;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    
+    .password-input:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(109, 191, 184, 0.1);
+    }
+    
+    .password-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        color: white;
+        border: none;
+        padding: 16px 30px;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        font-size: 1.1rem;
+        box-shadow: 0 4px 15px rgba(74, 111, 165, 0.2);
+    }
+    
+    .password-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(74, 111, 165, 0.3);
+    }
+    
+    /* МОДАЛЬНЕ ВІКНО */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter: blur(10px);
+        animation: fadeIn 0.3s ease;
+    }
+    
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    .modal-content {
+        background: var(--card-bg);
+        padding: 40px;
+        border-radius: 20px;
+        width: 90%;
+        max-width: 500px;
+        position: relative;
+        animation: modalAppear 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    @keyframes modalAppear {
+        from {
+            transform: scale(0.8) translateY(-20px);
+            opacity: 0;
+        }
+        to {
+            transform: scale(1) translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .modal-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: var(--light-gray);
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+        color: var(--text-color);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s;
+    }
+
+    .modal-close:hover {
+        background: var(--primary);
+        color: white;
+        transform: rotate(90deg);
+    }
+
+    .modal h3 {
+        color: var(--primary);
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    .modal-input {
+        width: 100%;
+        padding: 16px 20px;
+        margin: 12px 0;
+        border: 2px solid var(--light-gray);
+        border-radius: 10px;
+        font-size: 1.05rem;
+        background: white;
+        color: var(--text-color);
+        transition: all 0.3s;
+    }
+
+    .modal-input:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(109, 191, 184, 0.1);
+    }
+
+    .modal-btn {
+        width: 100%;
+        padding: 18px;
+        background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: all 0.3s;
+        box-shadow: 0 4px 15px rgba(74, 111, 165, 0.2);
+    }
+
+    .modal-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(74, 111, 165, 0.3);
+    }
+    
+    /* FOOTER */
+    footer {
+        text-align: center;
+        padding: 30px 20px;
+        background: var(--dark);
+        color: white;
+        margin-top: 50px;
+    }
+    
+    footer p {
+        margin: 5px 0;
+        font-size: 1.05rem;
+    }
+    
+    /* СПОВІЩЕННЯ */
+    .notification {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        padding: 20px 25px;
+        background: linear-gradient(135deg, #06d6a0, #05c593);
+        color: white;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(6, 214, 160, 0.3);
+        z-index: 10000;
+        animation: slideInRight 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        font-weight: 600;
+        max-width: 350px;
+        font-size: 1.05rem;
+        border: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    @keyframes slideInRight {
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+    
+    .notification.error {
+        background: linear-gradient(135deg, #ef476f, #e03e5a);
+        box-shadow: 0 10px 25px rgba(239, 71, 111, 0.3);
+    }
+    
+    /* RESPONSIVE */
+    @media (max-width: 1200px) {
+        .tabs-wrapper {
+            padding: 15px;
+        }
+        
+        .tab-btn {
+            min-width: 130px;
+            padding: 16px 20px;
+        }
+        
+        .card {
+            padding: 30px;
+        }
+    }
+    
+    @media (max-width: 992px) {
+        .tabs-wrapper {
+            gap: 3px;
+        }
+        
+        .tab-btn {
+            min-width: 120px;
+            padding: 14px 18px;
+            font-size: 0.95rem;
+        }
+        
+        .tab-btn span:first-child {
+            font-size: 1.2rem;
+        }
+        
+        .groups-grid {
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        }
+    }
+    
+    @media (max-width: 768px) {
+        header {
+            padding: 20px 15px;
+        }
+        
+        header h1 {
+            font-size: 1.6rem;
+        }
+        
+        .tabs-container {
+            top: 110px;
+        }
+        
+        .tabs-wrapper {
+            padding: 12px 15px;
+        }
+        
+        .tab-btn {
+            min-width: 110px;
+            padding: 12px 15px;
+            font-size: 0.9rem;
+            gap: 8px;
+        }
+        
+        .tab-btn span:first-child {
+            font-size: 1.1rem;
+        }
+        
+        .card {
+            padding: 25px;
+        }
+        
+        .card h2 {
+            font-size: 1.5rem;
+        }
+        
+        .modal-content {
+            padding: 30px;
+        }
+    }
+    
+    @media (max-width: 576px) {
+        .tabs-wrapper {
+            padding: 10px;
+        }
+        
+        .tab-btn {
+            min-width: 100px;
+            padding: 10px 12px;
+            font-size: 0.85rem;
+            gap: 6px;
+            flex-direction: column;
+            height: 90px;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .tab-btn span:first-child {
+            font-size: 1.3rem;
+        }
+        
+        .tab-btn span:last-child {
+            font-size: 0.85rem;
+            text-align: center;
+        }
+        
+        .header-btn {
+            min-width: 140px;
+            padding: 10px 20px;
+        }
+        
+        .groups-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        
+        .group-link {
+            padding: 15px 10px;
+            font-size: 1rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .tabs-wrapper {
+            gap: 2px;
+        }
+        
+        .tab-btn {
+            min-width: 90px;
+            padding: 8px 10px;
+            font-size: 0.8rem;
+            height: 85px;
+        }
+        
+        .tab-btn span:first-child {
+            font-size: 1.2rem;
+        }
+        
+        .container {
+            padding: 20px 15px;
+        }
+        
+        .card {
+            padding: 20px;
+        }
+        
+        .card h2 {
+            font-size: 1.3rem;
+        }
+    }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Овруцький ЗДО №8 «Ластівка» Овруцької міської ради</h1>
+    <p>Офіційний сайт дитячого садка</p>
+    <div class="header-buttons">
+        <button class="header-btn" id="loginBtn" onclick="openAuthModal()">
+            <span>👤</span> Ввести своє ім'я
+        </button>
+        <div class="user-profile-header" id="userProfileBtn" style="display: none;">
+            <span class="user-name" id="headerUserName"></span>
+        </div>
+    </div>
+</header>
+
+<!-- ВЕЛИКІ ГОРИЗОНТАЛЬНІ ВКЛАДКИ -->
+<div class="tabs-container">
+    <div class="tabs-wrapper">
+        <button class="tab-btn active" onclick="showTab('home')">
+            <span>🏠</span><span>Головна</span>
+        </button>
+        <button class="tab-btn" onclick="showTab('news')">
+            <span>📰</span><span>Новини</span>
+        </button>
+        <button class="tab-btn" onclick="showTab('album')">
+            <span>📸</span><span>Фото</span>
+        </button>
+        <button class="tab-btn" onclick="showTab('groups')">
+            <span>👨‍👩‍👧‍👦</span><span>Групи</span>
+        </button>
+        <button class="tab-btn" onclick="showTab('schedule')">
+            <span>📅</span><span>Розклад</span>
+        </button>
+        <button class="tab-btn" onclick="showTab('collective')">
+            <span>👩‍🏫</span><span>Колектив</span>
+        </button>
+        <button class="tab-btn" onclick="showTab('inclusive')">
+            <span>❤️</span><span>Інклюзія</span>
+        </button>
+        <button class="tab-btn" onclick="showTab('statut')">
+            <span>📋</span><span>Статут</span>
+        </button>
+        <button class="tab-btn" onclick="showTab('orders')">
+            <span>📄</span><span>Накази</span>
+        </button>
+    </div>
+</div>
+
+<div class="container">
+    <div class="cards-container">
+        <!-- ГОЛОВНА -->
+        <div id="home" class="card active">
+            <h2><span>🏠</span> Ласкаво просимо!</h2>
+            <p>Офіційний сайт Овруцький ЗДО №8 «Ластівка» Овруцької міської ради — місце, де кожна дитина отримує турботу, любов та якісну дошкільну освіту.</p>
+            <p><strong>Наша місія:</strong> створення безпечного та комфортного середовища для гармонійного розвитку дітей віком від 1 до 6 років.</p>
+            <div class="info-box">
+                <p><strong>📍 Адреса:</strong> вул. Прикордонна, м. Овруч, Житомирська область</p>
+                <p><strong>👥 Система доступу:</strong> Батькам пароль не потрібен.<strong> </strong></p>
+                <p><strong>⏰ Години роботи:</strong> Пн-Пт: 07:30 - 18:00</p>
+            </div>
+        </div>
+
+        <!-- НОВИНИ -->
+        <div id="news" class="card">
+            <h2><span>📰</span> Новини та оголошення</h2>
+            <p>Актуальні новини та важлива інформація для батьків:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1zooffQ541chkyuKTUul2nkPjJDwirvxQ" target="_blank">
+                <span>📁</span> Перейти до новин
+            </a>
+            <div class="password-form" id="newsPasswordForm" style="display: none;">
+                <h3><span>🔒</span> Введіть пароль</h3>
+                <p>Для доступу до новин введіть пароль:</p>
+                <input type="password" id="newsPassword" class="password-input" placeholder="'">
+                <button class="password-btn" onclick="checkPassword('news')">
+                    <span>✅</span> Підтвердити
+                </button>
+            </div>
+        </div>
+
+        <!-- ФОТОАЛЬБОМ -->
+        <div id="album" class="card">
+            <h2><span>📸</span> Фотоальбом</h2>
+            <p>Фотографії з життя нашого садочка:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1IknDuijQtf-RrgZ8PtK89K1W2_tWz6xU" target="_blank">
+                <span>📁</span> Перейти до фотоальбому
+            </a>
+            <div class="password-form" id="albumPasswordForm" style="display: none;">
+                <h3><span>🔒</span> Введіть пароль</h3>
+                <p>Для доступу до фотоальбому введіть пароль:</p>
+                <input type="password" id="albumPassword" class="password-input" placeholder="'">
+                <button class="password-btn" onclick="checkPassword('album')">
+                    <span>✅</span> Підтвердити
+                </button>
+            </div>
+        </div>
+
+        <!-- ГРУПИ -->
+        <div id="groups" class="card">
+            <h2><span>👨‍👩‍👧‍👦</span> Групи садочка</h2>
+            <p>Оберіть групу для перегляду матеріалів:</p>
+            <div class="groups-grid">
+                <a class="group-link" href="https://drive.google.com/drive/folders/1JGMSOMT_J2t3BaH-gb9zfTsBa0Mwcit_" target="_blank">
+                    <span>🍯</span> Бджілки
+                </a>
+                <a class="group-link" href="https://drive.google.com/drive/folders/1x4hdq03XGAvSasfasuUZDnglTzIGeAtl" target="_blank">
+                    <span>🌈</span> Веселка
+                </a>
+                <a class="group-link" href="https://drive.google.com/drive/folders/1NniCYxUD-PQG7C_QRuWc7xw02BMgdagk" target="_blank">
+                    <span>⭐</span> Зірочки
+                </a>
+                <a class="group-link" href="https://drive.google.com/drive/folders/1ILclmWrIcnjUO5A0inVl1lFKYr-M0KZ2" target="_blank">
+                    <span>💧</span> Краплинки
+                </a>
+                <a class="group-link" href="https://drive.google.com/drive/folders/1_88DhBgMjTTY9Bnxh-HFlhyIHROHkx5B" target="_blank">
+                    <span>🔍</span> Пізнайко
+                </a>
+                <a class="group-link" href="https://drive.google.com/drive/folders/1IaHJfVHh_g9W55Yc1ZIeGVPBQqsZxdAG" target="_blank">
+                    <span>☀️</span> Сонечко
+                </a>
+                <a class="group-link" href="https://drive.google.com/drive/folders/1cjb4QtNFRAcVbNB62YaHsp0n8L4r8wzg" target="_blank">
+                    <span>🌻</span> Соняшник
+                </a>
+                <a class="group-link" href="https://drive.google.com/drive/folders/16wVHEkqukh9DEyDiaW_QqjnBCH_aWxDn" target="_blank">
+                    <span>❓</span> Чомусики
+                </a>
+            </div>
+            <div class="password-form" id="groupsPasswordForm" style="display: none;">
+                <h3><span>🔒</span> Введіть пароль</h3>
+                <p>Для доступу до матеріалів груп введіть пароль:</p>
+                <input type="password" id="groupsPassword" class="password-input" placeholder="'">
+                <button class="password-btn" onclick="checkPassword('groups')">
+                    <span>✅</span> Підтвердити
+                </button>
+            </div>
+        </div>
+
+        <!-- РОЗКЛАД -->
+        <div id="schedule" class="card">
+            <h2><span>📅</span> Розклад занять</h2>
+            <p>Щоденний розклад та режим дня нашого садочка:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1WiA4RmGSrRH29CbrXg14df5JtuYd6TeJ" target="_blank">
+                <span>📁</span> Перейти до розкладу
+            </a>
+            <div class="password-form" id="schedulePasswordForm" style="display: none;">
+                <h3><span>🔒</span> Введіть пароль</h3>
+                <p>Для доступу до розкладу введіть пароль:</p>
+                <input type="password" id="schedulePassword" class="password-input" placeholder="Введіть пароль ''">
+                <button class="password-btn" onclick="checkPassword('schedule')">
+                    <span>✅</span> Підтвердити
+                </button>
+            </div>
+        </div>
+
+        <!-- ПЕДКОЛЕКТИВ -->
+        <div id="collective" class="card">
+            <h2><span>👩‍🏫</span> Педагогічний колектив</h2>
+            <p>Інформація про наших педагогів та методичні матеріали:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1Fwu64LsLkIeybCPFTni-_5DgFPvtBMp7" target="_blank">
+                <span>📁</span> Перейти до документів
+            </a>
+            <div class="password-form" id="collectivePasswordForm" style="display: none;">
+                <h3><span>🔒</span> Введіть пароль</h3>
+                <p>Для доступу до інформації введіть пароль:</p>
+                <input type="password" id="collectivePassword" class="password-input" placeholder="Введіть пароль ''">
+                <button class="password-btn" onclick="checkPassword('collective')">
+                    <span>✅</span> Підтвердити
+                </button>
+            </div>
+        </div>
+
+        <!-- ІНКЛЮЗІЯ -->
+        <div id="inclusive" class="card">
+            <h2><span>❤️</span> Інклюзивна освіта</h2>
+            <p>Документи з інклюзивної освіти нашого садочка:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/10Q-sd76LpOaqeMxjuyNNYUhFwHMz3lRK" target="_blank">
+                <span>📁</span> Перейти до документів
+            </a>
+            <div class="password-form" id="inclusivePasswordForm" style="display: none;">
+                <h3><span>🔒</span> Введіть пароль</h3>
+                <p>Для доступу до документів введіть пароль:</p>
+                <input type="password" id="inclusivePassword" class="password-input" placeholder="Введіть пароль ''">
+                <button class="password-btn" onclick="checkPassword('inclusive')">
+                    <span>✅</span> Підтвердити
+                </button>
+            </div>
+        </div>
+
+        <!-- СТАТУТ -->
+        <div id="statut" class="card">
+            <h2><span>📋</span> Статут садочка</h2>
+            <p>Офіційний статут та нормативні документи:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1fJZhnr-yTZ5Uecl4jdnkuSEDhleSx0dz" target="_blank">
+                <span>📁</span> Перейти до статуту
+            </a>
+            <div class="password-form" id="statutPasswordForm" style="display: none;">
+                <h3><span>🔒</span> Введіть пароль</h3>
+                <p>Для доступу до статуту введіть пароль:</p>
+                <input type="password" id="statutPassword" class="password-input" placeholder="Введіть пароль ''">
+                <button class="password-btn" onclick="checkPassword('statut')">
+                    <span>✅</span> Підтвердити
+                </button>
+            </div>
+        </div>
+
+        <!-- НАКАЗИ -->
+        <div id="orders" class="card">
+            <h2><span>📄</span> Накази</h2>
+            <p>Накази та розпорядження садочка:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1ANR6bzU3viTLAgj2NSY-n6JfDlzs_9mS" target="_blank">
+                <span>📁</span> Перейти до наказів
+            </a>
+            <div class="password-form" id="ordersPasswordForm" style="display: none;">
+                <h3><span>🔒</span> Введіть пароль</h3>
+                <p>Для доступу до наказів введіть пароль:</p>
+                <input type="password" id="ordersPassword" class="password-input" placeholder="Введіть пароль ''">
+                <button class="password-btn" onclick="checkPassword('orders')">
+                    <span>✅</span> Підтвердити
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- МОДАЛЬНЕ ВІКНО -->
+<div id="authModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeAuthModal()">×</button>
+        <h3><span>👤</span> Введіть ваші дані</h3>
+        <div class="name-form">
+            <input type="text" id="firstName" class="modal-input" placeholder="Ваше ім'я" required>
+            <input type="text" id="lastName" class="modal-input" placeholder="Ваше прізвище" required>
+            <select id="userRole" class="modal-input" onchange="togglePasswordField()">
+                <option value="">Оберіть вашу роль</option>
+                <option value="parent">Батько / Мати</option>
+                <option value="teacher">Вихователь / Педагог</option>
+                <option value="staff">Персонал садочка</option>
+            </select>
+            <div id="passwordField" style="display: none;">
+                <input type="password" id="password" class="modal-input" placeholder="Введіть пароль '">
+                <p style="font-size: 0.95rem; color: #666; margin-top: 8px; padding: 10px; background: #f8f9fa; border-radius: 8px;">
+                    <strong>ℹ️ Інформація:</strong>  <strong> </strong> <br>
+                    Батькам пароль не потрібен
+                </p>
+            </div>
+            <button class="modal-btn" onclick="submitName()">
+                <span>✅</span> Підтвердити вхід
+            </button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Овруцький ЗДО №8 "Ластівка" Овруцької міської ради</p>
+    <p>Офіційний сайт дитячого садка</p>
+</footer>
+
+<script>
+// Глобальні змінні
+let currentUser = null;
+const CORRECT_PASSWORD = "qwerty12345";
+const sections = ['news', 'album', 'groups', 'schedule', 'collective', 'inclusive', 'statut', 'orders'];
+
+// Перемикання вкладок з анімацією
+function showTab(tabId) {
+    // Ховаємо всі картки
+    document.querySelectorAll('.card').forEach(card => {
+        card.classList.remove('active');
+    });
+    
+    // Видаляємо активний клас з усіх вкладок
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    // Показуємо вибрану картку
+    const selectedCard = document.getElementById(tabId);
+    if (selectedCard) {
+        setTimeout(() => {
+            selectedCard.classList.add('active');
+        }, 50);
+        
+        // Плавне прокручування до верху контейнера
+        setTimeout(() => {
+            document.querySelector('.container').scrollIntoView({ 
+                behavior: 'smooth', 
+                block: 'start' 
+            });
+        }, 100);
+    }
+    
+    // Активуємо вибрану вкладку
+    const activeTab = document.querySelector(`[onclick="showTab('${tabId}')"]`);
+    if (activeTab) {
+        activeTab.classList.add('active');
+    }
+    
+    // Перевіряємо доступ до секції
+    checkSectionAccess(tabId);
+}
+
+// Перевірка доступу до секції
+function checkSectionAccess(sectionId) {
+    if (sectionId === 'home') return; // Головна доступна всім
+    
+    if (!currentUser) {
+        showPasswordForm(sectionId);
+        return;
+    }
+    
+    // Батькам доступ до всіх вкладок без пароля
+    if (currentUser.role === 'parent') {
+        hidePasswordForm(sectionId);
+        return;
+    }
+    
+    // Педагогам та персоналу потрібен пароль
+    if (currentUser.role === 'teacher' || currentUser.role === 'staff') {
+        const hasAccess = localStorage.getItem(`access_${sectionId}_${currentUser.id}`);
+        if (!hasAccess) {
+            showPasswordForm(sectionId);
+        } else {
+            hidePasswordForm(sectionId);
+        }
+    }
+}
+
+// Показати форму пароля
+function showPasswordForm(sectionId) {
+    const form = document.getElementById(sectionId + 'PasswordForm');
+    if (form) {
+        form.style.display = 'block';
+    }
+}
+
+// Сховати форму пароля
+function hidePasswordForm(sectionId) {
+    const form = document.getElementById(sectionId + 'PasswordForm');
+    if (form) {
+        form.style.display = 'none';
+    }
+}
+
+// Перевірка пароля
+function checkPassword(sectionId) {
+    const input = document.getElementById(sectionId + 'Password');
+    const password = input.value.trim();
+    
+    if (password === CORRECT_PASSWORD) {
+        if (currentUser) {
+            localStorage.setItem(`access_${sectionId}_${currentUser.id}`, 'true');
+        }
+        
+        hidePasswordForm(sectionId);
+        showNotification('✅ Пароль прийнято! Доступ надано до всіх розділів.');
+        
+        // Автоматично надаємо доступ до всіх секцій
+        sections.forEach(section => {
+            if (currentUser) {
+                localStorage.setItem(`access_${section}_${currentUser.id}`, 'true');
+            }
+        });
+    } else {
+        showNotification('❌ Невірний пароль. Спробуйте ще раз.', 'error');
+        input.value = '';
+        input.focus();
+    }
+}
+
+// Модальне вікно авторизації
+function openAuthModal() {
+    document.getElementById('authModal').style.display = 'flex';
+    document.getElementById('firstName').focus();
+}
+
+function closeAuthModal() {
+    document.getElementById('authModal').style.display = 'none';
+}
+
+function togglePasswordField() {
+    const role = document.getElementById('userRole').value;
+    const passwordField = document.getElementById('passwordField');
+    
+    if (role === 'teacher' || role === 'staff') {
+        passwordField.style.display = 'block';
+    } else {
+        passwordField.style.display = 'none';
+    }
+}
+
+function submitName() {
+    const firstName = document.getElementById('firstName').value.trim();
+    const lastName = document.getElementById('lastName').value.trim();
+    const role = document.getElementById('userRole').value;
+    const password = document.getElementById('password').value.trim();
+    
+    if (!firstName || !lastName || !role) {
+        showNotification('❌ Будь ласка, заповніть усі обов\'язкові поля', 'error');
+        return;
+    }
+    
+    // Перевірка пароля для педагогів та персоналу
+    if ((role === 'teacher' || role === 'staff') && password !== CORRECT_PASSWORD) {
+        showNotification('❌ Невірний пароль. ', 'error');
+        return;
+    }
+    
+    // Створюємо користувача
+    currentUser = {
+        id: 'user_' + Date.now(),
+        firstName: firstName,
+        lastName: lastName,
+        fullName: `${firstName} ${lastName}`,
+        role: role
+    };
+    
+    // Оновлюємо інтерфейс
+    document.getElementById('loginBtn').style.display = 'none';
+    document.getElementById('userProfileBtn').style.display = 'flex';
+    document.getElementById('headerUserName').textContent = currentUser.fullName;
+    
+    // Показуємо сповіщення
+    const roleNames = {
+        'parent': 'батько',
+        'teacher': 'педагог',
+        'staff': 'персонал'
+    };
+    showNotification(`✅ Вітаємо, ${firstName}! Ви увійшли як ${roleNames[role]}`);
+    
+    closeAuthModal();
+    
+    // Оновлюємо доступ до поточної вкладки
+    const activeCard = document.querySelector('.card.active');
+    if (activeCard) {
+        const sectionId = activeCard.id;
+        checkSectionAccess(sectionId);
+    }
+}
+
+// Функція для сповіщень
+function showNotification(message, type = 'success') {
+    const oldNotification = document.querySelector('.notification');
+    if (oldNotification) oldNotification.remove();
+    
+    const notification = document.createElement('div');
+    notification.className = `notification ${type === 'error' ? 'error' : ''}`;
+    notification.textContent = message;
+    
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.style.animation = 'slideInRight 0.4s ease reverse';
+        setTimeout(() => notification.remove(), 400);
+    }, 4000);
+}
+
+// Ініціалізація
+document.addEventListener('DOMContentLoaded', function() {
+    showTab('home');
+    
+    // Закриття модального вікна
+    document.getElementById('authModal').addEventListener('click', function(e) {
+        if (e.target === this) closeAuthModal();
+    });
+    
+    // Enter в полях
+    document.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            if (document.getElementById('authModal').style.display === 'flex') {
+                submitName();
+            }
+        }
+    });
+    
+    // Автоматично показуємо форму авторизації при завантаженні
+    setTimeout(() => {
+        if (!currentUser) {
+            showNotification('👋 Ласкаво просимо! Будь ласка, введіть ваше ім\'я для доступу.');
+        }
+    }, 2000);
+});
+</script>
+</body>
+</html>
